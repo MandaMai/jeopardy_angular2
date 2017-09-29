@@ -1,0 +1,13 @@
+<!--The whole content below can be removed with the new code.-->
+<div *ngIf="questionInfo">
+  <b>the question is:</b> {{questionInfo.question}}
+  <br>
+  <b>the category is:</b> {{questionInfo.category.title}}
+  <br>
+  <b>the point value is:</b> {{questionInfo.value}}
+  <br>
+  <br>
+  
+
+  <app-answer (finishedCheckingAnswer)="sampleMethod()" [questionInfo]="questionInfo"></app-answer>
+</div>
